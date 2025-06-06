@@ -18,8 +18,54 @@
     <link rel="canonical" href="https://jnvc583.github.io/">
     <!-- end _includes/seo.html -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      .char1{
+        color:rgb(0,200,200);
+      }
+      .datlis{
+        width:60mm;
+        height:10mm;
+        background: rgb(255,255,255);
+        position:absolute;
+        left: 200mm;
+        top: 7mm;
+        outline-style:solid;
+        outline-color:rgb(0,0,0);
+        outline-width:thin;
+      }
+      .ipt1{
+        width:60mm;
+        height:10mm;
+      }
+    </style>
   </head>
-  <body>
-    <h1>h</h1>
+  <body style="background-color:rgb(100,100,100);">
+    <h1 class="char1">火柴人官网</h1>
+    <form id="af">
+      <div class="datlis">
+        <input list="pn" class="ipt1" name="pn2" />
+        <datalist id="pn">
+          <option value="亿口子赫"></option>
+          <option value="亿口叶子"></option>
+          <option value="亿口小锐"></option>
+          <option value="亿口星辰"></option>
+          <option value="亿口面具"></option>
+          <option value="亿口幽蓝"></option>
+          <option value="亿口老六"></option>
+          <option value="卷毛"></option>
+          <option value="玖悦314"></option>
+          <option value="黑客老八"></option>
+        </datalist>
+        <input  id="btn" type="submit" value="查找" />
+      </div>
+    </form>
+    <script>
+      var btn= document.getElementById("btn");
+      btn.onclick=function(){
+        if(af.pn2.value == "亿口子赫"){
+          alert("亿口子赫，亿口组的组长。擅长画漫画、英语（虽然他在读小学，但其英语能力可以参加高考）。");
+        }
+      }
+    </script>
   </body>
 </html>
